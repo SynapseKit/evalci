@@ -136,10 +136,23 @@ EvalCI posts a comment like this on every PR:
 
 ---
 
+## Documentation
+
+Full documentation is available at **[synapsekit.github.io/synapsekit-docs/docs/evalci/overview](https://synapsekit.github.io/synapsekit-docs/docs/evalci/overview)**
+
+| | |
+|---|---|
+| [Overview](https://synapsekit.github.io/synapsekit-docs/docs/evalci/overview) | What EvalCI is and how it works |
+| [Quickstart](https://synapsekit.github.io/synapsekit-docs/docs/evalci/quickstart) | Set up in 5 minutes |
+| [Writing eval cases](https://synapsekit.github.io/synapsekit-docs/docs/evalci/writing-evals) | How to write `@eval_case` functions |
+| [Action reference](https://synapsekit.github.io/synapsekit-docs/docs/evalci/action-reference) | All inputs, outputs, and configuration |
+| [Examples](https://synapsekit.github.io/synapsekit-docs/docs/evalci/examples) | RAG, agents, multi-provider workflows |
+
 ## About
 
-EvalCI is built on [SynapseKit](https://synapsekit.github.io/synapsekit-docs/) — a lightweight Python library for building LLM applications with 30+ provider integrations and a built-in evaluation framework.
+EvalCI is built on [SynapseKit](https://synapsekit.github.io/synapsekit-docs/) — a Python library for building LLM applications with 30+ provider integrations and a built-in evaluation framework.
 
-- [Documentation](https://synapsekit.github.io/synapsekit-docs/)
-- [GitHub](https://github.com/SynapseKit/SynapseKit)
+- [Documentation](https://synapsekit.github.io/synapsekit-docs/docs/evalci/overview)
+- [SynapseKit](https://github.com/SynapseKit/SynapseKit)
 - [Issues](https://github.com/SynapseKit/evalci/issues)
+- [Discussions](https://github.com/SynapseKit/evalci/discussions)
