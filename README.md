@@ -1,6 +1,12 @@
 # EvalCI by SynapseKit
 
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-EvalCI-blue?logo=github)](https://github.com/marketplace/actions/evalci-by-synapsekit)
+[![License](https://img.shields.io/badge/License-Apache_2.0-orange.svg)](https://github.com/SynapseKit/evalci/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/SynapseKit/evalci?label=release&color=orange)](https://github.com/SynapseKit/evalci/releases/latest)
+[![GitHub Stars](https://img.shields.io/github/stars/SynapseKit/evalci?style=flat&color=orange)](https://github.com/SynapseKit/evalci/stargazers)
+[![Docs](https://img.shields.io/badge/docs-synapsekit-orange)](https://synapsekit.github.io/synapsekit-docs/docs/evalci/overview)
+[![Discussions](https://img.shields.io/github/discussions/SynapseKit/evalci)](https://github.com/SynapseKit/evalci/discussions)
+[![Issues](https://img.shields.io/github/issues/SynapseKit/evalci)](https://github.com/SynapseKit/evalci/issues)
 
 **LLM quality gates for every PR.** Run your `@eval_case` suites automatically and block merge if quality drops below threshold.
 
