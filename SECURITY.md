@@ -4,7 +4,7 @@
 
 **Please do not report security vulnerabilities via public GitHub issues.**
 
-Email us at: **security@synapsekit.dev**
+Open a [GitHub Security Advisory](https://github.com/SynapseKit/evalci/security/advisories/new) — this keeps the report private and visible only to maintainers.
 
 Include:
 - Description of the vulnerability
