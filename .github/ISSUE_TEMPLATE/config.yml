@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or Discussion
+    url: https://github.com/SynapseKit/evalci/discussions
+    about: Ask questions and share ideas in Discussions
+  - name: Documentation
+    url: https://synapsekit.github.io/synapsekit-docs/
+    about: Read the full documentation
+  - name: Discord
+    url: https://discord.gg/MP9ZBMcKzP
+    about: Chat with the community on Discord
