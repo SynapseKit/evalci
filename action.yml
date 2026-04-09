@@ -55,9 +55,9 @@ runs:
       shell: bash
       run: |
         if [ "${{ inputs.synapsekit-version }}" = "latest" ]; then
-          pip install --quiet "synapsekit[${{ inputs.extras }}]"
+          pip install --quiet --no-cache-dir --upgrade "synapsekit[${{ inputs.extras }}]"
         else
-          pip install --quiet "synapsekit[${{ inputs.extras }}]==${{ inputs.synapsekit-version }}"
+          pip install --quiet --no-cache-dir "synapsekit[${{ inputs.extras }}]==${{ inputs.synapsekit-version }}"
         fi
 
     - name: Run EvalCI
