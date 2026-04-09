@@ -1,0 +1,73 @@
+name: "EvalCI by SynapseKit"
+description: "Run @eval_case suites on every PR and block merge if quality drops below threshold"
+author: "SynapseKit"
+
+branding:
+  icon: "check-circle"
+  color: "green"
+
+inputs:
+  path:
+    description: "Path to eval files or directory"
+    default: "."
+  threshold:
+    description: "Global minimum score (0.0–1.0)"
+    default: "0.7"
+  extras:
+    description: "pip extras to install with synapsekit (e.g. openai,anthropic)"
+    default: "openai"
+  synapsekit-version:
+    description: "synapsekit version to install (e.g. 1.5.1 or latest)"
+    default: "latest"
+  github-token:
+    description: "GitHub token for posting PR comments"
+    default: ${{ github.token }}
+  fail-on-regression:
+    description: "Exit 1 if score regresses compared to baseline"
+    default: "false"
+  token:
+    description: "EvalCI backend API token (future use)"
+    default: ""
+
+outputs:
+  passed:
+    description: "Number of eval cases that passed"
+    value: ${{ steps.evalci.outputs.passed }}
+  failed:
+    description: "Number of eval cases that failed"
+    value: ${{ steps.evalci.outputs.failed }}
+  total:
+    description: "Total number of eval cases"
+    value: ${{ steps.evalci.outputs.total }}
+  mean-score:
+    description: "Mean score across all eval cases"
+    value: ${{ steps.evalci.outputs.mean-score }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install synapsekit
+      shell: bash
+      run: |
+        if [ "${{ inputs.synapsekit-version }}" = "latest" ]; then
+          pip install --quiet "synapsekit[${{ inputs.extras }}]"
+        else
+          pip install --quiet "synapsekit[${{ inputs.extras }}]==${{ inputs.synapsekit-version }}"
+        fi
+
+    - name: Run EvalCI
+      id: evalci
+      shell: bash
+      env:
+        INPUT_PATH: ${{ inputs.path }}
+        INPUT_THRESHOLD: ${{ inputs.threshold }}
+        INPUT_FAIL_ON_REGRESSION: ${{ inputs.fail-on-regression }}
+        INPUT_GITHUB_TOKEN: ${{ inputs.github-token }}
+        INPUT_TOKEN: ${{ inputs.token }}
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+      run: python ${{ github.action_path }}/entrypoint.py
