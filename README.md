@@ -12,7 +12,7 @@
 
 - Zero infrastructure — runs entirely in GitHub Actions
 - 2-minute setup
-- Works with any LLM provider (OpenAI, Anthropic, Gemini, and [30+ more](https://synapsekit.github.io/synapsekit-docs/))
+- Works with any LLM provider (OpenAI, Anthropic, Gemini, and [34 more](https://synapsekit.github.io/synapsekit-docs/))
 - Posts a formatted results table as a PR comment
 - Sets Action outputs for downstream steps
 
@@ -156,7 +156,7 @@ Full documentation is available at **[synapsekit.github.io/synapsekit-docs/docs/
 
 ## About
 
-EvalCI is built on [SynapseKit](https://synapsekit.github.io/synapsekit-docs/) — a Python library for building LLM applications with 30+ provider integrations and a built-in evaluation framework.
+EvalCI is built on [SynapseKit](https://synapsekit.github.io/synapsekit-docs/) — a Python library for building LLM applications with 34 provider integrations and a built-in evaluation framework.
 
 - [Documentation](https://synapsekit.github.io/synapsekit-docs/docs/evalci/overview)
 - [SynapseKit](https://github.com/SynapseKit/SynapseKit)
