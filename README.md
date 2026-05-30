@@ -1,6 +1,7 @@
 # EvalCI by SynapseKit
 
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-EvalCI-blue?logo=github)](https://github.com/marketplace/actions/evalci-by-synapsekit)
+[![Website](https://img.shields.io/badge/website-synapse--kit.com-orange?logo=googlechrome&logoColor=white)](https://synapse-kit.com)
 [![License](https://img.shields.io/badge/License-Apache_2.0-orange.svg)](https://github.com/SynapseKit/evalci/blob/main/LICENSE)
 [![Latest Release](https://img.shields.io/github/v/release/SynapseKit/evalci?label=release&color=orange)](https://github.com/SynapseKit/evalci/releases/latest)
 [![GitHub Stars](https://img.shields.io/github/stars/SynapseKit/evalci?style=flat&color=orange)](https://github.com/SynapseKit/evalci/stargazers)
